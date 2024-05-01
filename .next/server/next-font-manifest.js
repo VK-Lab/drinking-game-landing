@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{\"/_app\":[\"static/media/b2460515b12f22dc-s.p.ttf\"]},\"app\":{\"/Users/gaupoit/Work/crossx/drinking-game-landing/app/page\":[\"static/media/b2460515b12f22dc-s.p.ttf\"],\"/Users/gaupoit/Work/crossx/drinking-game-landing/app/layout\":[\"static/media/c9a5bc6a7c948fb0-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":true}"
