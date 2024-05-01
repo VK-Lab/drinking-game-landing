@@ -12,8 +12,15 @@ const myFont = localFont({ src: "./SuperMario256.ttf", variable: "--my-font" });
 
 const projectId = "bc74d9ca10f837f40de70bddb477484a";
 export const wagmiConfig = createConfig({
+  ssr: true,
   chains: [mainnet, base],
-  connectors: [walletConnect({ projectId, showQrModal: false })],
+  connectors: [
+    metaMask({
+      dappMetadata: {
+        name: "Drinking Simulator",
+      },
+    }),
+  ],
   transports: {
     [mainnet.id]: http(),
     [base.id]: http(),
