@@ -13,7 +13,7 @@ const myFont = localFont({ src: "./SuperMario256.ttf", variable: "--my-font" });
 const projectId = "bc74d9ca10f837f40de70bddb477484a";
 export const wagmiConfig = createConfig({
   chains: [mainnet, base],
-  connectors: [walletConnect({ projectId })],
+  connectors: [walletConnect({ projectId, showQrModal: false })],
   transports: {
     [mainnet.id]: http(),
     [base.id]: http(),

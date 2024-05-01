@@ -7,7 +7,7 @@ interface MainCardProps {
 }
 
 export const MainCard = ({ userData = {} }: MainCardProps) => {
-  const { isConnected, address } = useAccount();
+  const { isConnected } = useAccount();
   const onPlay = () => {
     window.open("https://www.roblox.com/games/15699428870/BETA");
   };
