@@ -36,7 +36,7 @@ export const linkAccount = async ({
   publicKey,
   signedMessage,
 }: LinkAccountParams) => {
-  return await request.post(`/users/${userId}/link`, {
+  return await request.post(`/users/${userId}/link-evm`, {
     publicKey,
     signedMessage,
   });
