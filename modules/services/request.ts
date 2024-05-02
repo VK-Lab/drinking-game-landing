@@ -3,6 +3,9 @@ import axios, { AxiosResponse } from 'axios';
 const casperDashRequest = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
   timeout: 100 * 1000,
+  headers: {
+    'x-api-key': process.env.NEXT_PUBLIC_API_KEY,
+  }
 });
 
 casperDashRequest.interceptors.response.use(
