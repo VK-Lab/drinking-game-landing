@@ -1,7 +1,7 @@
 import request from './request';
 
 export type LinkedAccountResponse = {
-  publicKey: string;
+  evmWallet: string;
   userId: string;
 };
 
@@ -28,16 +28,16 @@ export const getAssets = async (userId: string): Promise<AssetResponse[]> => {
 
 type LinkAccountParams = {
   userId: string;
-  publicKey: string;
+  evmWallet: string;
   signedMessage: string;
 };
 export const linkAccount = async ({
   userId,
-  publicKey,
+  evmWallet,
   signedMessage,
 }: LinkAccountParams) => {
   return await request.post(`/users/${userId}/link-evm`, {
-    publicKey,
+    evmWallet,
     signedMessage,
   });
 };
