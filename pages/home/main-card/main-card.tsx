@@ -48,7 +48,7 @@ export const MainCard = ({ userData = {} }: MainCardProps) => {
     }
   };
   const onPlay = () => {
-    window.open("https://www.roblox.com/games/15699428870/BETA");
+    window.open("https://www.roblox.com/games/17086622220/Drinking-Simulator");
   };
 
   return (
