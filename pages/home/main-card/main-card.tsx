@@ -72,7 +72,6 @@ export const MainCard = ({ userData = {} }: MainCardProps) => {
                 Link Wallet for {address}
               </Button>
             ) : (
-              // <WalletOptions />
               <Button
                 onClick={() =>
                   connect({
