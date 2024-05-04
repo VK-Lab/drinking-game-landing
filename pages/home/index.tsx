@@ -90,11 +90,13 @@ export default function Home({ initUserData }: { initUserData: any }) {
             </div>
           </div>
         ) : (
-          <Link href="/api/auth/login">
-            <div className="justify-end self-end rounded bg-red-500 px-10 py-2 font-bold cursor-pointer mr-2">
-              Login
-            </div>
-          </Link>
+          <div className="flex ml-auto px-10 gap-2 items-center">
+            <Link href="/api/auth/login">
+              <div className="justify-end self-end rounded bg-red-500 px-10 py-2 font-bold cursor-pointer mr-2">
+                Login
+              </div>
+            </Link>
+          </div>
         )}
       </div>
       {userData && <MainCard userData={userData} />}

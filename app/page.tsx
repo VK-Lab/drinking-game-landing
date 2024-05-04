@@ -16,11 +16,14 @@ export default function Home() {
           </div>
         </div>
 
-        <Link href="/api/auth/login">
-          <div className="justify-end self-end rounded bg-red-500 px-10 py-2 font-bold cursor-pointer">
-            Login
-          </div>
-        </Link>
+        <div className="flex ml-auto px-10 gap-2 items-center">
+          <Link href="/api/auth/login">
+            <div className="justify-end self-end rounded bg-red-500 px-10 py-2 font-bold cursor-pointer">
+              Login
+            </div>
+          </Link>
+        </div>
+
         {/* <img
           src="/comingsoon.webp"
           alt="logo"
