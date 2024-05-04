@@ -22,10 +22,10 @@
 } */
 
 * {
-  font-family: var(--my-font) !important;
+  font-family: var(--my-font);
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: var(--my-font) !important;
+  font-family: var(--my-font);
 }
